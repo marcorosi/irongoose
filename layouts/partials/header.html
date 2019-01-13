@@ -1,0 +1,18 @@
+{{ `<!-- layouts/partials/header.html -->` | safeHTML }}
+<div class="container">
+    <div class="logo">
+        <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}/img/logo.jpg" alt="logo Iron Goose"></a>
+    </div>
+    <nav>
+        <span>Iron Goose Productions</span>
+        <ul>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <li {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)  }} class="active"
+                {{end}}>
+                <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</div>

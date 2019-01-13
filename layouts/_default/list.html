@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ `
+<!-- layouts/_default/list.html -->` | safeHTML }}
+
+{{ partial "head.html" . }}
+
+<body>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+
+    <main>
+        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+        {{.Content}}
+
+        <div class="container">
+            <div class="filters">
+                <ul>
+                    <li class="active"><a href="">All</a></li>
+                    <li><a href="">Commercial</a></li>
+                    <li><a href="">No Commercial</a></li>
+                </ul>
+            </div>
+            <section class="previews">
+                {{ range .Pages }}
+                <article>
+                    <a href="{{.Permalink}}">
+                        <img src="/works/{{.File.BaseFileName}}.jpg" alt="Thumbnail image">
+                        <h4>{{.Title}}</h4>
+                    </a>
+                </article>
+                {{ end }}
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+
+</body>
+
+</html>

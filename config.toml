@@ -1,0 +1,34 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Iron Gooose Productions"
+sectionPagesMenu = "main"
+
+[params]
+    google_analytics_id=""
+
+[[menu.main]]
+	name = "Home"
+	url = "/"
+    weight = 1
+
+[[menu.main]]
+    identifier = "works"
+    name = "Works"
+    title = "Our Works"
+    url = "/works"
+    weight = 10
+
+# [[menu.main]]
+#     name = "Works"
+#     url = "/works/"
+#     weight = 2
+
+# [[menu.main]]
+#     name = "Contacts"
+#     url = "/contacts/"
+#     weight = 3
+
+# [[menu.main]]
+#     name = "Who"
+#     url = "/who/"
+#     weight = 4
