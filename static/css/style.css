@@ -17,56 +17,61 @@ header, footer, nav, section, article, hgroup, figure {
 /* Fine RESET */
 /* line 19, /Users/manu/Desktop/igp/scss/style.scss */
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
-/* line 23, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 24, /Users/manu/Desktop/igp/scss/style.scss */
 body {
   font-family: 'Karla', sans-serif;
   font-weight: 400; }
 
-/* line 28, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 29, /Users/manu/Desktop/igp/scss/style.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 33, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 34, /Users/manu/Desktop/igp/scss/style.scss */
 a {
   color: #000; }
 
-/* line 37, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 38, /Users/manu/Desktop/igp/scss/style.scss */
 .container {
   max-width: 90%;
   margin: 0 auto; }
   @media (min-width: 1440px) {
-    /* line 37, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 38, /Users/manu/Desktop/igp/scss/style.scss */
     .container {
       max-width: 1340px; } }
 
-/* line 46, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 47, /Users/manu/Desktop/igp/scss/style.scss */
 main {
   margin-top: 32px; }
 
-/* line 51, /Users/manu/Desktop/igp/scss/style.scss */
+  header {
+    overflow-x: hidden;
+  }
+
+/* line 52, /Users/manu/Desktop/igp/scss/style.scss */
 header .container {
   display: flex;
   justify-content: space-between;
   padding-top: 16px; }
 
-/* line 57, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 58, /Users/manu/Desktop/igp/scss/style.scss */
 header span {
   font-family: 'Sacramento', cursive;
   font-size: 28px; }
 
-/* line 63, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 64, /Users/manu/Desktop/igp/scss/style.scss */
 header nav ul {
   display: flex;
   justify-content: flex-end; }
 
-/* line 68, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 69, /Users/manu/Desktop/igp/scss/style.scss */
 header nav li {
   list-style: none;
   line-height: 1; }
-  /* line 72, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 73, /Users/manu/Desktop/igp/scss/style.scss */
   header nav li a {
     color: #000;
     font-size: 14px;
@@ -74,20 +79,20 @@ header nav li {
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 8px; }
-  /* line 81, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 82, /Users/manu/Desktop/igp/scss/style.scss */
   header nav li.active a {
     color: #fe9701; }
 
 @media (max-width: 639px) {
-  /* line 90, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 91, /Users/manu/Desktop/igp/scss/style.scss */
   header .logo img {
     max-height: 30vw; } }
 
 @media (min-width: 640px) {
-  /* line 50, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 51, /Users/manu/Desktop/igp/scss/style.scss */
   header {
     position: relative; }
-    /* line 98, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 99, /Users/manu/Desktop/igp/scss/style.scss */
     header:before {
       content: '';
       position: absolute;
@@ -100,136 +105,135 @@ header nav li {
       z-index: -1;
       background-color: #000;
       z-index: -1; }
-    /* line 114, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 115, /Users/manu/Desktop/igp/scss/style.scss */
     header .container {
       justify-content: flex-start; }
-    /* line 118, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 119, /Users/manu/Desktop/igp/scss/style.scss */
     header .logo img {
       max-height: 200px; }
-    /* line 121, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 122, /Users/manu/Desktop/igp/scss/style.scss */
     header nav {
       display: flex;
       flex-grow: 1;
       justify-content: space-between; }
-      /* line 126, /Users/manu/Desktop/igp/scss/style.scss */
+      /* line 127, /Users/manu/Desktop/igp/scss/style.scss */
       header nav li a {
         color: #fff; }
-    /* line 132, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 133, /Users/manu/Desktop/igp/scss/style.scss */
     header ul {
       margin-top: 16px; }
-    /* line 136, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 137, /Users/manu/Desktop/igp/scss/style.scss */
     header span {
       margin: 32px 32px 0 0; } }
 
 @media (min-width: 992px) {
-  /* line 144, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 145, /Users/manu/Desktop/igp/scss/style.scss */
   header:before {
     width: 55vw;
     height: 18vw;
     transform: rotate(14deg);
     right: -5vw;
     top: -7vw; }
-  /* line 152, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 153, /Users/manu/Desktop/igp/scss/style.scss */
   header span {
     font-size: 40px; }
-  /* line 156, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 157, /Users/manu/Desktop/igp/scss/style.scss */
   header nav li a {
     font-size: 1rem;
     margin-left: 16px; }
-  /* line 161, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 162, /Users/manu/Desktop/igp/scss/style.scss */
   header ul {
     margin-top: 24px; } }
 
 @media (min-width: 1440px) {
-  /* line 167, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 168, /Users/manu/Desktop/igp/scss/style.scss */
   header:before {
     width: 55vw;
     height: 18vw;
     transform: rotate(14deg);
     right: -5vw;
-    top: 0;
     bottom: 18%; } }
 
-/* line 178, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 179, /Users/manu/Desktop/igp/scss/style.scss */
 .filters ul {
   display: flex;
   margin-bottom: 12px; }
-  /* line 182, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 183, /Users/manu/Desktop/igp/scss/style.scss */
   .filters ul li {
     list-style: none;
     line-height: 1; }
-    /* line 186, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 187, /Users/manu/Desktop/igp/scss/style.scss */
     .filters ul li a {
       color: #000;
       font-size: 14px;
       margin-right: 16px; }
-    /* line 192, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 193, /Users/manu/Desktop/igp/scss/style.scss */
     .filters ul li.active a {
       color: #fe9701;
       text-decoration: none;
       font-weight: 700; }
   @media (min-width: 992px) {
-    /* line 178, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 179, /Users/manu/Desktop/igp/scss/style.scss */
     .filters ul {
       margin-bottom: 24px; } }
 
-/* line 207, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 208, /Users/manu/Desktop/igp/scss/style.scss */
 .previews h4 {
   font-size: 14px;
   margin-top: 4px; }
 
-/* line 212, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 213, /Users/manu/Desktop/igp/scss/style.scss */
 .previews article {
   margin-bottom: 16px; }
 
-/* line 215, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 216, /Users/manu/Desktop/igp/scss/style.scss */
 .previews a {
   text-decoration: none; }
-  /* line 219, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 220, /Users/manu/Desktop/igp/scss/style.scss */
   .previews a:hover h4 {
     text-decoration: underline; }
 
 @media (min-width: 501px) {
-  /* line 205, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 206, /Users/manu/Desktop/igp/scss/style.scss */
   .previews {
     display: flex;
     flex-wrap: wrap; }
-    /* line 232, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 233, /Users/manu/Desktop/igp/scss/style.scss */
     .previews article {
       flex-basis: 48%;
       width: 48%;
       margin-right: 2%; }
-    /* line 239, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 240, /Users/manu/Desktop/igp/scss/style.scss */
     .previews article:nth-child(2n+2) {
       margin-right: 0; } }
 
 @media (min-width: 768px) {
-  /* line 248, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 249, /Users/manu/Desktop/igp/scss/style.scss */
   .previews article {
     flex-basis: 31%;
     width: 31%;
     margin: 0 2% 32px 0; }
-  /* line 253, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 254, /Users/manu/Desktop/igp/scss/style.scss */
   .previews article:nth-child(3n+3) {
     margin-right: 0; }
-  /* line 256, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 257, /Users/manu/Desktop/igp/scss/style.scss */
   .previews article:nth-child(2n+2) {
     margin-right: 2%; } }
 
 @media (min-width: 1440px) {
-  /* line 265, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 266, /Users/manu/Desktop/igp/scss/style.scss */
   .previews article {
     flex-basis: 23%;
     width: 23%;
     margin: 0 2% 32px 0; }
-  /* line 271, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 272, /Users/manu/Desktop/igp/scss/style.scss */
   .previews article:nth-child(4n+4) {
     margin-right: 0; }
-  /* line 275, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 276, /Users/manu/Desktop/igp/scss/style.scss */
   .previews article:nth-child(3n+3), .previews article:nth-child(2n+2) {
     margin-right: 2%; } }
 
-/* line 290, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 291, /Users/manu/Desktop/igp/scss/style.scss */
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -238,7 +242,7 @@ header nav li {
   max-width: 100%;
   margin: 24px 0 16px 0; }
 
-/* line 300, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 301, /Users/manu/Desktop/igp/scss/style.scss */
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -248,17 +252,17 @@ header nav li {
   width: 100%;
   height: 100%; }
 
-/* line 309, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 310, /Users/manu/Desktop/igp/scss/style.scss */
 h1 {
   font-size: 24px; }
 
-/* line 313, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 314, /Users/manu/Desktop/igp/scss/style.scss */
 article p {
   margin-top: 8px;
   font-size: 16px;
   line-height: 1.3; }
 
-/* line 319, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 320, /Users/manu/Desktop/igp/scss/style.scss */
 h2 {
   font-size: 18px;
   font-weight: normal;
@@ -266,190 +270,225 @@ h2 {
   color: gray; }
 
 @media (min-width: 768px) {
-  /* line 328, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 329, /Users/manu/Desktop/igp/scss/style.scss */
   main {
     margin: 64px 0; }
-  /* line 331, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 332, /Users/manu/Desktop/igp/scss/style.scss */
   h1 {
     font-size: 32px; }
-  /* line 334, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 335, /Users/manu/Desktop/igp/scss/style.scss */
   .embed-container {
     margin: 32px 0; }
-  /* line 338, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 339, /Users/manu/Desktop/igp/scss/style.scss */
   h2 {
     font-size: 22px; }
-  /* line 341, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 342, /Users/manu/Desktop/igp/scss/style.scss */
   article p {
     margin-top: 12px;
     font-size: 20px;
     line-height: 1.3; } }
 
-/* line 351, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 352, /Users/manu/Desktop/igp/scss/style.scss */
 .contacts {
   font-size: 20px; }
 
-/* line 355, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 356, /Users/manu/Desktop/igp/scss/style.scss */
 .email, .phone {
   margin-bottom: 64px; }
 
-/* line 358, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 359, /Users/manu/Desktop/igp/scss/style.scss */
 .email a {
   display: block;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   color: #fc9102;
   margin-top: 16px; }
-  /* line 365, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 366, /Users/manu/Desktop/igp/scss/style.scss */
   .email a:hover {
     color: #000; }
 
-/* line 370, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 371, /Users/manu/Desktop/igp/scss/style.scss */
 .phone span {
   display: block;
   margin-top: 16px;
   line-height: 1.3; }
-  /* line 375, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 376, /Users/manu/Desktop/igp/scss/style.scss */
   .phone span a {
     font-weight: 700;
     text-decoration: none; }
 
-/* line 381, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 382, /Users/manu/Desktop/igp/scss/style.scss */
 .social {
   display: flex;
   flex-wrap: wrap; }
-  /* line 385, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 386, /Users/manu/Desktop/igp/scss/style.scss */
   .social span {
     display: block;
     flex-basis: 100%;
     margin-bottom: 16px; }
-  /* line 392, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 393, /Users/manu/Desktop/igp/scss/style.scss */
   .social svg {
     width: 44px;
     height: 44px; }
-  /* line 398, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 399, /Users/manu/Desktop/igp/scss/style.scss */
   .social a {
     text-decoration: none; }
-    /* line 402, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 403, /Users/manu/Desktop/igp/scss/style.scss */
     .social a:hover svg {
       fill: #fc9102; }
 
-/* line 411, /Users/manu/Desktop/igp/scss/style.scss */
+@media (min-width: 768px) {
+  /* line 411, /Users/manu/Desktop/igp/scss/style.scss */
+  .email a {
+    font-size: 28px; } }
+
+/* line 419, /Users/manu/Desktop/igp/scss/style.scss */
 .people {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  /* line 417, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 425, /Users/manu/Desktop/igp/scss/style.scss */
   .people article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto 32px auto; }
-  /* line 433, /Users/manu/Desktop/igp/scss/style.scss */
+    margin-bottom: 32px; }
+  /* line 432, /Users/manu/Desktop/igp/scss/style.scss */
+  .people a:hover svg {
+    fill: #fc9102; }
+  /* line 436, /Users/manu/Desktop/igp/scss/style.scss */
   .people .name {
     margin-top: 16px;
     font-weight: 700; }
-  /* line 438, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 441, /Users/manu/Desktop/igp/scss/style.scss */
   .people .in {
     margin-top: 8px; }
-  /* line 444, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 447, /Users/manu/Desktop/igp/scss/style.scss */
   .people svg {
     width: 28px;
     height: 28px; }
   @media (min-width: 480px) {
-    /* line 452, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 455, /Users/manu/Desktop/igp/scss/style.scss */
     .people article {
-      margin: 0 3vw 32px 3vw; } }
-  @media (min-width: 768px) {
+      margin: 0 8px 32px 8px;
+      flex-basis: calc(50% - 16px);
+      max-width: calc(50% - 16px);
+      align-items: flex-start; } }
+  @media (min-width: 600px) {
     /* line 466, /Users/manu/Desktop/igp/scss/style.scss */
     .people article {
-      margin: 0 12px 32px 12px; } }
+      margin: 0 12px 32px 12px;
+      flex-basis: calc(33% - 24px);
+      max-width: calc(33% - 24px); } }
+  @media (min-width: 860px) {
+    /* line 475, /Users/manu/Desktop/igp/scss/style.scss */
+    .people article {
+      margin: 0 12px 32px 12px;
+      flex-basis: calc(20% - 24px);
+      max-width: calc(20% - 24px); } }
 
-/* line 477, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 488, /Users/manu/Desktop/igp/scss/style.scss */
 .intro span {
   font-size: 20px; }
-  /* line 480, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 491, /Users/manu/Desktop/igp/scss/style.scss */
   .intro span a {
     font-weight: bold;
     color: #fe9701; }
 
 @media (min-width: 640px) {
-  /* line 492, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 503, /Users/manu/Desktop/igp/scss/style.scss */
   .home header .logo img {
     max-height: 400px; }
-  /* line 500, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 511, /Users/manu/Desktop/igp/scss/style.scss */
   .home header h1 {
     font-family: 'Sacramento', cursive;
     font-size: 50px;
     font-weight: normal;
     margin-bottom: 4px; }
-  /* line 510, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 521, /Users/manu/Desktop/igp/scss/style.scss */
   .intro {
     margin: -175px 0 0 150px;
     max-width: 60vw; }
-    /* line 514, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 525, /Users/manu/Desktop/igp/scss/style.scss */
     .intro h1 {
       font-family: 'Sacramento', cursive;
       font-size: 50px;
       font-weight: normal;
       margin-bottom: 4px; }
-    /* line 521, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 532, /Users/manu/Desktop/igp/scss/style.scss */
     .intro p {
       margin: 0 0 16px 0; } }
 
 @media (min-width: 1200px) {
-  /* line 530, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 541, /Users/manu/Desktop/igp/scss/style.scss */
   .intro {
     max-width: 70%; }
-    /* line 533, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 544, /Users/manu/Desktop/igp/scss/style.scss */
     .intro span {
       font-size: 24px; } }
 
-/* line 544, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 555, /Users/manu/Desktop/igp/scss/style.scss */
 .home header .container {
   justify-content: center; }
 
-/* line 548, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 559, /Users/manu/Desktop/igp/scss/style.scss */
 .home header .logo {
   text-align: right;
   flex-basis: 24vw; }
-  /* line 552, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 563, /Users/manu/Desktop/igp/scss/style.scss */
   .home header .logo img {
-    max-height: 80vh;
+    max-height: 70vh;
     margin-top: 24px; }
 
-/* line 558, /Users/manu/Desktop/igp/scss/style.scss */
+/* line 569, /Users/manu/Desktop/igp/scss/style.scss */
 .home header nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
-  /* line 563, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 574, /Users/manu/Desktop/igp/scss/style.scss */
   .home header nav span {
     order: 2;
     text-align: center;
     font-size: 8vw;
-    margin-top: 20vh;
+    margin-top: 24vh;
     margin-right: 0; }
 
 @media (max-width: 639px) {
-  /* line 574, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 585, /Users/manu/Desktop/igp/scss/style.scss */
   .home header .container {
     flex-direction: column; }
-  /* line 577, /Users/manu/Desktop/igp/scss/style.scss */
+  /* line 588, /Users/manu/Desktop/igp/scss/style.scss */
   .home header .logo {
     order: 2;
     text-align: center; }
-    /* line 581, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 592, /Users/manu/Desktop/igp/scss/style.scss */
     .home header .logo img {
-      max-height: 60vh; }
-  /* line 586, /Users/manu/Desktop/igp/scss/style.scss */
+      max-height: 50vh; }
+  /* line 597, /Users/manu/Desktop/igp/scss/style.scss */
   .home header nav {
     justify-content: center; }
-    /* line 589, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 600, /Users/manu/Desktop/igp/scss/style.scss */
     .home header nav span {
       margin-top: 32px;
       font-size: 10vw; }
-    /* line 594, /Users/manu/Desktop/igp/scss/style.scss */
+    /* line 605, /Users/manu/Desktop/igp/scss/style.scss */
     .home header nav ul {
       justify-content: center; } }
+
+@media (min-width: 992px) {
+  /* line 614, /Users/manu/Desktop/igp/scss/style.scss */
+  .home header nav span {
+    font-size: 80px; } }
+
+/* line 624, /Users/manu/Desktop/igp/scss/style.scss */
+.home main {
+  display: none; }
+
+/* line 631, /Users/manu/Desktop/igp/scss/style.scss 
+footer {
+  width: 100%;
+  padding: 90px 0;
+  background: url(/img/footer.png) no-repeat 0 0; }
+*/
 
 /*# sourceMappingURL=style.css.map */
