@@ -49,6 +49,7 @@ main {
 
   header {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
 /* line 52, /Users/manu/Desktop/igp/scss/style.scss */
