@@ -4,7 +4,11 @@
         <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}/img/logo.jpg" alt="logo Iron Goose"></a>
     </div>
     <nav>
-        <span>Iron Goose Productions</span>
+        <span>
+        {{ if .IsHome}}
+            Iron Goose Productions
+        {{ end }} 
+        </span>
         <ul>
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
